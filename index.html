@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation : La Cherry Lemon Gelato</title>
+
+    <meta property="og:title" content="Présentation : La Cherry Lemon Gelato">
+    <meta property="og:description" content="Découvrez la Cherry Lemon Gelato, un hybride puissant. Explorez ses saveurs de cerise et de citron, ses effets équilibrés et son haut taux de THC.">
+    <meta property="og:image" content="https://placehold.co/1200x630/f43f5e/ffffff?text=Cherry+Lemon+Gelato">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .progress-bar-fill {
+            transition: width 0.3s ease-in-out;
+        }
+        /* Nouvelle palette de couleurs basée sur la cerise (rouge/rose) et le citron (jaune/vert) */
+        .color-primary { color: #f43f5e; } /* Rose/Cerise (Red-500) */
+        .bg-primary { background-color: #f43f5e; }
+        .bg-primary-light { background-color: #ffe4e6; } /* Rose très clair (Red-50) */
+        .text-primary-dark { color: #9f1239; } /* Rouge foncé (Red-800) */
+        .bg-secondary-light { background-color: #fffbeb; } /* Jaune clair (Amber-50) */
+        .text-secondary-dark { color: #a16207; } /* Jaune foncé (Amber-700) */
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div class="p-4 bg-gray-50 border-b border-gray-200">
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div id="progressBar" class="bg-primary h-2.5 rounded-full progress-bar-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <div id="presentation-container" class="p-8 md:p-12 min-h-[500px] md:min-h-[550px] flex flex-col justify-center">
+
+            <div class="slide active">
+                <div class="text-center">
+                    <div class="inline-block bg-primary-light text-primary-dark text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                        Présentation de Variété
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">La Cherry Lemon Gelato</h1>
+                    <p class="text-lg md:text-xl text-gray-600">Le parfait équilibre entre Fruité et Crémeux</p>
+                    <img src="https://placehold.co/600x300/f43f5e/ffffff?text=Cherry+Lemon+Gelato" alt="Image de Cherry Lemon Gelato" class="mx-auto mt-8 rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">1. Profil de la Cherry Lemon Gelato</h2>
+                <ul class="space-y-4 text-gray-700 text-lg">
+                    <li class="flex items-start"><i data-lucide="gem" class="w-6 h-6 mr-3 color-primary flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Origines Prestigieuses :</strong> Un hybride très recherché de la côte ouest.</span></li>
+                    <li class="flex items-start"><i data-lucide="dna" class="w-6 h-6 mr-3 color-primary flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Génétique :</strong> Croisement de **Sunset Sherbet** et **Girl Scout Cookies (GSC)**.</span></li>
+                    <li class="flex items-start"><i data-lucide="bar-chart-3" class="w-6 h-6 mr-3 color-primary flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Dominance :</strong> Hybride équilibré, souvent à légère dominante **Indica (60/40)**.</span></li>
+                    <li class="flex items-start"><i data-lucide="zap" class="w-6 h-6 mr-3 color-primary flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Teneur en THC :</strong> **Très élevée (20% à 28%)**, pour une puissance notable.</span></li>
+                    <li class="flex items-start"><i data-lucide="leaf" class="w-6 h-6 mr-3 color-primary flex-shrink-0 mt-1"></i><span><strong class="font-semibold text-gray-900">Terpènes Dominants :</strong> **Caryophyllène, Limonène** et **Myrcène**.</span></li>
+                </ul>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">2. Profil Aromatique : Cerise & Zeste de Citron</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 flex items-center"><i data-lucide="cherry" class="w-7 h-7 mr-2 color-primary"></i>Goût</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 color-primary"></i><strong>Cerise Douce :</strong> Dominance fruitée de cerises mûres.</li>
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 color-primary"></i><strong>Zeste de Citron :</strong> Note acidulée et vive d'agrumes.</li>
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 color-primary"></i><strong>Gelato Crémeux :</strong> Finition douce et dessert, typique des variétés Gelato.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 flex items-center"><i data-lucide="wind" class="w-7 h-7 mr-2 color-primary"></i>Odeur</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 color-primary"></i><strong>Fruité Dégoulinant :</strong> Mélange de baies et de citron vert.</li>
+                            <li class="flex items-center"><i data-lucide="dot" class="w-5 h-5 mr-2 color-primary"></i><strong>Terreux Subtil :</strong> Notes de fond riches et légèrement épicées.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">3. Les Effets : Euphorie Relaxante</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-secondary-light p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-secondary-dark mb-3 flex items-center"><i data-lucide="laugh" class="w-7 h-7 mr-2"></i>Cérébraux (Sativa)</h3>
+                        <p class="text-secondary-dark">Début euphorique et joyeux, stimulant l'humeur et la créativité. Peut provoquer des fous rires et une sensation de picotement mental.</p>
+                    </div>
+                    <div class="bg-primary-light p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3 flex items-center"><i data-lucide="sofa" class="w-7 h-7 mr-2"></i>Corporels (Indica)</h3>
+                        <p class="text-primary-dark">Une relaxation physique profonde et apaisante qui soulage les tensions, sans nécessairement provoquer un effet de "couch-lock" immédiat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">4. Utilisations Potentielles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="cloud-off" class="w-8 h-8 mr-4 color-primary"></i><div><h4 class="font-semibold text-gray-900">Anxiété & Stress Chronique</h4><p class="text-gray-600 text-sm">Ses propriétés calmantes aident à relâcher la pression mentale.</p></div></div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="bone" class="w-8 h-8 mr-4 color-primary"></i><div><h4 class="font-semibold text-gray-900">Soulagement de la Douleur</h4><p class="text-gray-600 text-sm">Efficace pour les douleurs musculaires et les maux chroniques.</p></div></div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="smile-plus" class="w-8 h-8 mr-4 color-primary"></i><div><h4 class="font-semibold text-gray-900">Amélioration de l'Humeur</h4><p class="text-gray-600 text-sm">L'effet euphorisant aide à combattre les symptômes de la dépression.</p></div></div>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg"><i data-lucide="moon-star" class="w-8 h-8 mr-4 color-primary"></i><div><h4 class="font-semibold text-gray-900">Insomnie Légère</h4><p class="text-gray-600 text-sm">La relaxation corporelle aide à l'endormissement en fin d'effet.</p></div></div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">5. Le Verdict sur la Cherry Lemon Gelato</h2>
+                <div class="text-center max-w-2xl mx-auto">
+                    <p class="text-lg text-gray-700 mb-6">
+                        C'est une variété star pour une raison : elle combine une saveur de dessert inoubliable avec des effets **puissants et bien arrondis**, qui passent d'une stimulation joyeuse à une détente enveloppante.
+                    </p>
+                    <div class="flex justify-center space-x-4 flex-wrap gap-2">
+                        <span class="bg-primary-light text-primary-dark px-4 py-2 rounded-full font-medium">Arôme Fruité/Crémeux</span>
+                        <span class="bg-secondary-light text-secondary-dark px-4 py-2 rounded-full font-medium">High Très Puissant</span>
+                        <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full font-medium">Idéal Soirée/Social</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-4 bg-gray-50 border-t border-gray-200 flex justify-between items-center">
+            <button id="prevBtn" class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center">
+                <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Précédent
+            </button>
+            <span id="slideCounter" class="text-sm text-gray-600 font-medium">1 / 6</span>
+            <button id="nextBtn" class="bg-primary text-white font-bold py-2 px-4 rounded-lg hover:bg-rose-700 transition-colors flex items-center">
+                Suivant <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            const slides = document.querySelectorAll('.slide');
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const progressBar = document.getElementById('progressBar');
+            const slideCounter = document.getElementById('slideCounter');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                
+                // Update progress bar
+                const progressPercentage = ((index + 1) / totalSlides) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+
+                // Update counter
+                slideCounter.textContent = `${index + 1} / ${totalSlides}`;
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === totalSlides - 1;
+
+                if (index === totalSlides - 1) {
+                    nextBtn.innerHTML = 'Terminer <i data-lucide="check-circle" class="w-5 h-5 ml-2"></i>';
+                } else {
+                    nextBtn.innerHTML = 'Suivant <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>';
+                }
+                lucide.createIcons();
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize first slide
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
